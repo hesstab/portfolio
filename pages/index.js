@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Header from '../components/Header/Header'
 import AboutMe from '../components/AboutMe/AboutMe';
 import styles from '../styles/Home.module.css'
@@ -26,7 +27,6 @@ export default function Home() {
             <img className={styles.curve} src="/bottom.png" alt="curve1" />
             <img className={styles.curve} src="/top.png" alt="curve1" />
           </div>
-          {/* <AboutMe /> */}
         </div>
         
       </main>
