@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    background: transparent;
+    color: white;
+}
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 10px;
+}
+ 
+.inner ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
