@@ -7,7 +7,7 @@ const AboutMe = () => {
                 <img src="/befunky.jpg" alt="photo" />
             </div>
             <div className={styles.content}>
-                <h2>Hi, I'm Hessam</h2>
+                <h2>Hi, I am Hessam</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione obcaecati, quaerat sed ab explicabo dignissimos deserunt eos, itaque nesciunt quo? Aliquid ipsa cupiditate architecto deserunt, quisquam reiciendis nihil fugit!
                 </p>
