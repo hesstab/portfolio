@@ -16,7 +16,7 @@ export default function Home() {
                 Hessam Tabatabaee
               </h1>
               <p className={styles.introText}>
-                I'm a software engineer based in Sydney, with a passion for tech and creating delightful web experience 
+                I am a software engineer based in Sydney, with a passion for tech and creating delightful web experience 
               </p>
               <div className={styles.buttonContainer}>
                 <Button>
