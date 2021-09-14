@@ -20,6 +20,8 @@
   max-width: 100%;
   position: absolute;
   bottom: 0;
+  height: 900px;
+  width: 100%;
 }
 
 .intro {
@@ -28,7 +30,7 @@
     max-width: 350px;
     color: white;
     color: 0;
-    left: 55%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 2;
 }
@@ -43,4 +45,18 @@
 
 .buttonContainer {
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .curve {
+    object-fit: cover;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 794px;
+  }
+}
+.projects {
+  background-color: #091129;
+  padding-top: 20px;
 }

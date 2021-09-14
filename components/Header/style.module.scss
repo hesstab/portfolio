@@ -5,17 +5,26 @@
     right: 0;
     background: transparent;
     color: white;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .inner {
-    max-width: 1000px;
+    // max-width: 1200px;
     margin: 0 auto;
     background-color: transparent;
-    padding: 10px;
+    padding: 10px 20px;
 }
  
 .inner ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    height: 50px;
+    align-items: center;
 }
+
+.canvas {
+    flex: 1;
+}
+

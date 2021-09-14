@@ -1,0 +1,33 @@
+.projectContainer {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #26304e;
+    display: -moz-box;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.info {
+    flex: 1;
+    color: white;
+}
+
+.imageContainer {
+    margin-right: 250px;
+    display: flex;
+    width: 200px;
+}
+
+.image1 {
+        max-width: 100%;
+        transform: rotate(345deg);
+        z-index: 1;
+}
+
+.image2 {
+        max-width: 100%;
+        transform: rotate(11deg);
+        margin-right: -50px;
+}

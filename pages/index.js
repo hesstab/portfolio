@@ -3,6 +3,7 @@ import Header from '../components/Header/Header'
 import AboutMe from '../components/AboutMe/AboutMe';
 import styles from '../styles/Home.module.css'
 import Button from '../components/Button/Button';
+import Project from '../components/Project/Project';
 
 export default function Home() {
   return (
@@ -26,6 +27,20 @@ export default function Home() {
             </div>
             <img className={styles.curve} src="/bottom.png" alt="curve1" />
             <img className={styles.curve} src="/top.png" alt="curve1" />
+          </div>
+          <div className={styles.projects}>
+            <Project 
+              title="CovInfo" 
+              subtitle="NSW COVID information" 
+              image1="/covidTop.png" 
+              image2="/covidMap.png" 
+            />
+            <Project 
+              title="CovInfo" 
+              subtitle="NSW COVID information" 
+              image1="/covidTop.png" 
+              image2="/covidMap.png" 
+            />
           </div>
         </div>
         

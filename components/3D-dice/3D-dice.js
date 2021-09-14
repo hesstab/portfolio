@@ -2,7 +2,7 @@ import React, { useRef, useState, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-import dice from "./dice.png";
+// import dice from "../../public/befunky.jpg";
 
 const Box = (props) => {
     // This reference will give us direct access to the mesh
@@ -17,13 +17,13 @@ const Box = (props) => {
         mesh.current.rotation.x += props.ratio;
     });
 
-    const texture = useMemo(() => new THREE.TextureLoader().load(dice), []);
+    const texture = useMemo(() => new THREE.TextureLoader().load('/dice.png'), []);
 
     return (
         <mesh
             {...props}
             ref={mesh}
-            scale={active ? [2, 2, 2] : [1.5, 1.5, 1.5]}
+            scale={active ? [2, 2, 2] : [3, 3, 3]}
             onClick={(e) => setActive(!active)}
         >
             <boxBufferGeometry args={[1, 1, 1]} />
