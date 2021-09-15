@@ -7,7 +7,7 @@ const AboutMe = () => {
                 <img src="/befunky.jpg" alt="photo" />
             </div>
             <div className={styles.content}>
-                <h2>The most dangerous phrase in human language is, "We've always done it this way." - Grace Hopper</h2>
+                <h2>The most dangerous phrase in human language is, `We have always done it this way.` - Grace Hopper</h2>
                 <p>
                     Hi, I am Hessam, a junior software engineer with over 10 years of experience in Molecular biology, Bioinformatics and Cancer Genomics. 
                 </p>
