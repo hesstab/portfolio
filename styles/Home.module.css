@@ -40,11 +40,9 @@
 }
 
 .introText {
-  color: #c3f6ff;
-}
-
-.buttonContainer {
-  text-align: center;
+  color: white;
+  line-height: 25px;
+  font-size: larger;
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,7 +54,37 @@
     height: 794px;
   }
 }
+
+.aboutme {
+  background-color: #000000;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
 .projects {
+  background-color: #000000;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.projectsTitle {
+  color: white;
+  text-align: left;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.aboutmeTitle {
+  color: white;
+  text-align: left;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 100px;
   background-color: #091129;
-  padding-top: 20px;
+  color: rgb(255 255 255 / 70%);
+  text-align: center;
 }

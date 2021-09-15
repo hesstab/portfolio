@@ -2,9 +2,11 @@ import styles from './style.module.scss';
 
 const NavItem = (props) => {
     return (
-        <a className={styles.link} href="#">
+        <button 
+            onClick={() => document.getElementById(props.elementId).scrollIntoView({ behavior: 'smooth' })}
+            className={styles.navButton}>
             {props.name}
-        </a>
+        </button>
     );
 }
 

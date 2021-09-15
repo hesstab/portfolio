@@ -1,12 +1,12 @@
 .header {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     left: 0;
     right: 0;
     background: transparent;
     color: white;
-    max-width: 1000px;
     margin: 0 auto;
+    transition: background .3s linear;
 }
 
 .inner {
@@ -22,9 +22,15 @@
     justify-content: flex-end;
     height: 50px;
     align-items: center;
+    margin: 0;
 }
 
 .canvas {
     flex: 1;
 }
+
+.darkNavBar {
+    background-color: #091128;
+}
+
 

@@ -1,5 +1,9 @@
-import { ImGithub } from "react-icons/im";
+import { RiGithubLine } from "react-icons/ri";
+import { HiExternalLink } from "react-icons/hi";
 import styles from './style.module.scss';
+import classNames from 'classnames/bind'
+
+const classes = classNames.bind(styles);
 
 const Project = (props) => {
     return(
@@ -8,19 +12,23 @@ const Project = (props) => {
                 <h2>
                     {props.title}
                 </h2>
-                <p>
-                    {props.subtitle}
+                <div className={styles.subtitleContainer}>
+                    <p>
+                        {props.subtitle}
+                    </p>
+                </div>
+                <p className={styles.tech}>
+                    {props.tech}
                 </p>
                 <div className={styles.icons}>
-                    <ImGithub />
-                    <ImGithub />
+                    <RiGithubLine size={30} />
+                    <HiExternalLink size={30} />
                 </div>
             </div>
-            <div className={styles.imageContainer}>
-                <img className={styles.image1} src={props.image1} alt="project-image" />
-                <img className={styles.image2} src={props.image2} alt="project-image" />
+            <div className={classes('imageContainer')}>
+                {props.image2 ? <img className={styles.image2} src={props.image2} alt="project-image" /> : null}
+                <img className={classes(props.className)} src={props.image1} alt="project-image" />
             </div>
-            
         </div>
     )
 }

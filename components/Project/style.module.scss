@@ -1,33 +1,77 @@
 .projectContainer {
-    padding: 30px 20px;
+    padding: 50px;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #26304e;
+    background-color: #091129;
     display: -moz-box;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-radius: 15px;
 }
 
 .info {
     flex: 1;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h2 {
+     color: #f79d3e;
+}
+
+.info p {
+    // line-height: 30px;
+    // padding: 5px;
+    // background-color: #091129;
+    // border-radius: 10px;
+    // margin-right: 10px;
+    line-height: 30px;
+    border-radius: 10px;
+    max-width: 505px;
+    margin: 0;
+}
+
+.subtitleContainer {
+    // line-height: 30px;
+    // padding: 5px;
+    // background-color: #091129;
+    // border-radius: 10px;
+    // margin-right: 10px;
+    background-color: #091128;
+    border-radius: 10px;
+    width: 550px;
+    flex: 1;
 }
 
 .imageContainer {
-    margin-right: 250px;
-    display: flex;
+    margin-right: 100px;
+    // display: flex;
     width: 200px;
+    position: relative;
 }
 
 .image1 {
         max-width: 100%;
-        transform: rotate(345deg);
-        z-index: 1;
+        transform: translate(-53px, -14px) rotate(345deg);
 }
 
 .image2 {
-        max-width: 100%;
-        transform: rotate(11deg);
-        margin-right: -50px;
+    max-width: 100%;
+    margin-right: -50px;
+    position: absolute;
+    // transform: translate(140px, -5px) rotate(9deg);
+    transform: translate(80px, -14px) rotate(9deg);
+}
+
+.sweet-sweat {
+    transform: scale(-1.0, 1.0) translate(250px, -5px);
+}
+
+.tech {
+    color: #f79d3e;
+}
+
+.icons {
+    margin-top: 10px;
 }

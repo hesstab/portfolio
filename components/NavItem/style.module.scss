@@ -4,7 +4,21 @@
     border-radius: 15px;
 }
 
-.link:hover {
-    // background-color: darkmagenta;
-    color: grey
+.navButton:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.navButton:active {
+    vertical-align: top;
+    padding: 5px 5px 4px;
+}
+
+.navButton {
+    padding: 10px 5px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: medium;
+    margin-right: 10px;
 }

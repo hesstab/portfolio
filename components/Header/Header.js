@@ -1,12 +1,25 @@
 import { Canvas } from "@react-three/fiber";
 import Box from "../3D-dice/3D-dice";
-
 import styles from './style.module.scss';
 import NavItem from '../NavItem/NavItem';
+import { useEffect, useState } from "react";
+
 
 const Header = () => {
+    const [isObserved, setIsObserved] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                setIsObserved(e.isIntersecting);
+            });
+        }, { threshold: 0.2 });
+
+        observer.observe(document.getElementById('bodyElements'));
+    }, []);
+
     return (
-        <div className={styles.header}>
+        <div className={`${styles.header} ${isObserved ? styles.darkNavBar : null}`}>
             <div className={styles.inner}>
                 <ul>
                     <li className={styles.canvas}>
@@ -18,9 +31,15 @@ const Header = () => {
                             <Box position={[2.5, -1, 0]} ratio={0.015} />
                         </Canvas>
                     </li>
-                    <li><NavItem name="About"/></li>
-                    <li><NavItem name="Projects"/></li>
-                    <li><NavItem name="Resume"/></li>
+                    <li>
+                        <NavItem elementId="aboutMe" name="About Me" />
+                    </li>
+                    <li>
+                        <NavItem elementId="projects" name="Projects"/>
+                    </li>
+                    <li>
+                        <NavItem name="Resume"/>
+                    </li>
                 </ul>
             </div>
         </div>

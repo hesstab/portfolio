@@ -2,15 +2,32 @@
     display: flex;
     border: solid 1px grey;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #000000;
+    color: white;
+    border: none;
+    height: 700px;
 }
 
-.image img {
-    width: 500px;
-    padding: 10px;
+.image {
     border-radius: 15px;
+
+    & img {
+        width: 500px;
+        border-radius: 15px;
+        height: 100%;
+        object-fit: cover;
+    }   
 }
+
 
 .content {
-    padding: 20px;
+    padding: 0 20px 20px 90px;
+    line-height: 30px;
+}
+
+.content h2 {
+    color: #f79d3e;
 }
