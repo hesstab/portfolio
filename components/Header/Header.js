@@ -5,7 +5,6 @@ import styles from './style.module.scss';
 import NavItem from '../NavItem/NavItem';
 import { useEffect, useState } from "react";
 
-
 const Header = () => {
     const [isObserved, setIsObserved] = useState(false);
 
@@ -19,14 +18,18 @@ const Header = () => {
         observer.observe(document.getElementById('bodyElements'));
     }, []);
 
+    const openPdf = () => {
+        window.open('/SE-resume.pdf', "_blank");
+    }
+
     return (
         <div className={`${styles.header} ${isObserved ? styles.darkNavBar : null}`}>
             <div className={styles.inner}>
                 <ul>
                     <li className={styles.canvas}>
                         <button 
-                        onClick={() => document.getElementById('main-top').scrollIntoView({ behavior: 'smooth' })}
-                        className={styles.diceButton}
+                            onClick={() => document.getElementById('main-top').scrollIntoView({ behavior: 'smooth' })}
+                            className={styles.diceButton}
                         >
                             <Canvas style={{ height: 50, width: 110 }}>
                                 <ambientLight intensity={0.5} />
@@ -38,16 +41,29 @@ const Header = () => {
                         </button>
                     </li>
                     <li>
-                        <NavItem elementId="aboutMe" name="About Me" />
+                        <NavItem 
+                            onClick={ () => document.getElementById('aboutMe').scrollIntoView({ behavior: 'smooth' }) } 
+                            name="About Me"
+                        />
                     </li>
                     <li>
-                        <NavItem elementId="projects" name="Projects"/>
+                        <NavItem
+                            onClick={ () => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }) }
+                            name="Projects"
+                        />
                     </li>
                     <li>
-                        <NavItem elementId="footer" name="Contact Me"/>
+                        <NavItem 
+                            onClick={ () => document.getElementById('footer').scrollIntoView({ behavior: 'smooth' }) }
+                            name="Contact Me"
+                        />
                     </li>
                     <li>
-                        <NavItem name="Resume"/>
+                        <NavItem 
+                            onClick={openPdf} 
+                            name="Resume"
+                            id="resumeButton"
+                        />
                     </li>
                 </ul>
             </div>

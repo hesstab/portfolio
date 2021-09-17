@@ -4,22 +4,28 @@
     border-radius: 15px;
 }
 
-.navButton:hover {
+.buttonContainer button:hover {
     color: grey;
     cursor: pointer;
 }
 
-.navButton:active {
+.buttonContainer button:active {
     vertical-align: top;
     padding: 5px 5px 4px;
 }
 
-.navButton {
-    padding: 10px 5px;
+.buttonContainer button {
+    padding: 7px 6px;
     border: none;
     background: transparent;
     color: white;
     font-size: medium;
     margin-right: 15px;
     font-size: large;
+}
+
+#resumeButton {
+    border: solid 1px;
+    border-style: dotted;
+    border-radius: 6px;
 }
