@@ -1,9 +1,14 @@
 .button {
     padding: 15px 20px;
     border-radius: 10px;
-    min-width: 100px;
+    min-width: 200px;
     border: none;
     background-color: var(--color-primary);
     color: white;
     box-shadow: 0px 10px 20px -10px #0e225d;
+}
+
+.button:hover {
+    transform: translateY(5px);
+    cursor: pointer;
 }

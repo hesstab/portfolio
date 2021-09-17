@@ -19,7 +19,6 @@
 .inner ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
     height: 50px;
     align-items: center;
     margin: 0;
@@ -31,6 +30,12 @@
 
 .darkNavBar {
     background-color: #091128;
+}
+
+.diceButton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 

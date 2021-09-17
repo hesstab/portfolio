@@ -7,7 +7,7 @@ import Project from '../components/Project/Project';
 
 export default function Home() {
   return (
-    <div>
+    <div id="main-top">
       <Header />
       <main className={styles.main}>
         <div className={styles.inner}>
@@ -22,7 +22,7 @@ export default function Home() {
               </p>
               <div className={styles.buttonContainer}>
                 <Button>
-                  Say Hi!
+                  GET IN TOUCH
                 </Button>
               </div>
             </div>
@@ -34,6 +34,7 @@ export default function Home() {
             <div id="aboutMe" className={styles.aboutme}>
               <h1 className={styles.aboutmeTitle}>
                 About Me
+                <hr/>
               </h1>
               <AboutMe />
             </div>
@@ -41,38 +42,47 @@ export default function Home() {
             <div id="projects" className={styles.projects}>
               <h1 className={styles.projectsTitle}>
                 Projects
+                <hr/>
               </h1>
               <Project
                 title="CovInfo"
-                subtitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta deserunt quia magni hic porro exercitationem eos ex ducimus molestias, nihil repellendus reprehenderit, corporis dignissimos nisi, iure deleniti laborum beatae ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta deserunt quia magni hic porro exercitationem eos ex ducimus molestias, nihil repellendus reprehenderit, corporis dignissimos nisi, iure deleniti laborum beatae ratione."
+                subtitle="NSW COVID information website  |  Sep 2021"
+                description="COVID infographic app that uses government APIs to visualise NSW COVID info and a map that color codes suburbs based on infected cases."
                 image1="/covidTop.png"
                 image2="/covidMap.png"
-                tech="Vue - Node - Heroku - Mapbox"
+                tech="Vue - Node - Express - Heroku - Mapbox"
                 className="image1"
+                urlDemo="https://cov-info-app.herokuapp.com/"
+                urlGit="https://github.com/MoAbyari/CovInfo"
               />
               <Project
                 title="Sweet & Sweat"
-                subtitle="This project was inspired by the current lockdown circumstances where people are isolated inside and might not have enough motivation to get out there and exercise! We created an activity-based dating app to light that fire in their hearts.<br>
-                Features: <br>
-                Challenges:"
-                image1="/sweet.png"
+                subtitle="Activity-based dating web app  |  August 2021"
+                description="This project was inspired by the current lockdown circumstances where people are isolated inside and might not have enough motivation to get out there and exercise! We created an activity-based dating app to light that fire in their hearts."
+                image1="/sweet-sweat.png"
                 tech="React - Firebase - GA"
                 className="sweet-sweat"
+                urlDemo="https://sweet-sweat.web.app/login"
+                urlGit="https://github.com/hesstab/Sweet-Sweat"
               />
               <Project
                 title="AdoptMeow"
-                subtitle="NSW COVID information"
-                image1="/covidTop.png"
-                tech="Rails - Ruby - PostgreSQL - S3(AWS) - Heroku"
-                className="image1"
+                subtitle="A platform to find cats for adoption  |  July 2021"
+                description="An MVC designed project that allow users to have profiles and browse or list cats for adoption."
+                image1="/adoptMeow.png"
+                tech="Ruby on Rails - PostgreSQL - S3(AWS) - Heroku"
+                className="adoptMeow"
+                urlDemo="https://adoptme-project-hessam.herokuapp.com/"
+                urlGit="https://github.com/hesstab/AdoptMoew"
               />
             </div>
           </div>
 
         </div>
       </main>
-      <footer className={styles.footer}>
-        <p>Site made with React, Next.js and Vercel</p>
+      <footer id="footer" className={styles.footer}>
+        <p className={styles.footerParagraph}>Site made with React, Next.js and Vercel</p>
+        <p className={styles.footerParagraph}>hessam.tabatabaee@gmail.com</p>
             <p>© 2021 Hessam Tabatabaee</p>
       </footer>
     </div>

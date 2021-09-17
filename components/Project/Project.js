@@ -1,5 +1,5 @@
 import { RiGithubLine } from "react-icons/ri";
-import { HiExternalLink } from "react-icons/hi";
+import { HiLink } from "react-icons/hi";
 import styles from './style.module.scss';
 import classNames from 'classnames/bind'
 
@@ -17,12 +17,29 @@ const Project = (props) => {
                         {props.subtitle}
                     </p>
                 </div>
+                <div className={styles.descriptionContainer}>
+                    <p>
+                        {props.description}
+                    </p>
+                </div>
+
                 <p className={styles.tech}>
+                    <hr/>
                     {props.tech}
                 </p>
                 <div className={styles.icons}>
-                    <RiGithubLine size={30} />
-                    <HiExternalLink size={30} />
+                    <button 
+                    className={styles.iconButton} 
+                    onClick={() => window.open(props.urlGit, "_blank")}
+                    >
+                        <RiGithubLine className={styles.iconElement} size={30} />
+                    </button>
+                    <button 
+                    className={styles.iconButton}
+                    onClick={() => window.open(props.urlDemo, "_blank")}
+                    >
+                        <HiLink className={styles.iconElement} size={30} />
+                    </button>
                 </div>
             </div>
             <div className={classes('imageContainer')}>
