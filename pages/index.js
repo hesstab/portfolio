@@ -5,6 +5,13 @@ import styles from '../styles/Home.module.css'
 import Button from '../components/Button/Button';
 import Project from '../components/Project/Project';
 
+import { RiGithubLine, RiLinkedinBoxFill, RiTwitterFill } from "react-icons/ri";
+
+const GithubURL = "https://github.com/hesstab";
+const LinkedinURL = "https://www.linkedin.com/in/hessam-tabatabaee/";
+const TwitterURL = "https://twitter.com/hessam_taba";
+
+
 export default function Home() {
   return (
     <div id="main-top">
@@ -81,9 +88,29 @@ export default function Home() {
         </div>
       </main>
       <footer id="footer" className={styles.footer}>
+        <div className={styles.footerButtonContainer}>
+          <button 
+          className={styles.footerButton}
+            onClick={() => window.open(GithubURL, "_blank")}
+          >
+            <RiGithubLine size={40} />
+          </button>
+          <button 
+          className={styles.footerButton}
+            onClick={() => window.open(LinkedinURL, "_blank")}
+          >
+            <RiLinkedinBoxFill size={40} />
+          </button>
+          <button 
+          className={styles.footerButton}
+            onClick={() => window.open(TwitterURL, "_blank")}
+          >
+            <RiTwitterFill size={40} />
+          </button>
+        </div>
         <p className={styles.footerParagraph}>Site made with React, Next.js and Vercel</p>
         <p className={styles.footerParagraph}>hessam.tabatabaee@gmail.com</p>
-            <p>© 2021 Hessam Tabatabaee</p>
+        <p className={styles.footerParagraph}>© 2021 Hessam Tabatabaee</p>
       </footer>
     </div>
   )

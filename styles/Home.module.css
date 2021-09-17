@@ -91,4 +91,27 @@
 
 .footerParagraph {
   margin: 5px;
+  color: gray;
+}
+
+.footerButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerButton {
+  background: transparent;
+  border: none;
+  color: gray;
+  border-radius: 50%;
+  border: none;
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+}
+
+.footerButton:hover {
+  border: solid 2px;
+  color: #f7f7f7;
+  cursor: pointer;
 }
