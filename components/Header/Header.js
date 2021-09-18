@@ -19,7 +19,7 @@ const Header = () => {
     }, []);
 
     const openPdf = () => {
-        window.open('/SE-resume-recent.pdf', "_blank");
+        window.open('/SE-resume.pdf', "_blank");
     }
 
     return (
