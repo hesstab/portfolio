@@ -13,8 +13,11 @@ const Project = (props) => {
                     {props.title}
                 </h2>
                 <div className={styles.subtitleContainer}>
-                    <p>
+                    <p className={styles.subtitleText}>
                         {props.subtitle}
+                    </p>
+                    <p className={styles.subtitleDate}>
+                        {props.date}
                     </p>
                 </div>
                 <div className={styles.descriptionContainer}>
@@ -32,13 +35,15 @@ const Project = (props) => {
                     className={styles.iconButton} 
                     onClick={() => window.open(props.urlGit, "_blank")}
                     >
-                        <RiGithubLine className={styles.iconElement} size={30} />
+                        <RiGithubLine className={styles.iconElement} size={20} />
+                        <p>Github</p>
                     </button>
                     <button 
                     className={styles.iconButton}
                     onClick={() => window.open(props.urlDemo, "_blank")}
                     >
-                        <HiLink className={styles.iconElement} size={30} />
+                        <HiLink className={styles.iconElement} size={20} />
+                        <p>Demo</p>
                     </button>
                 </div>
             </div>

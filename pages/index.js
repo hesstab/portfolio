@@ -53,7 +53,8 @@ export default function Home() {
               </h1>
               <Project
                 title="CovInfo"
-                subtitle="NSW COVID information website  |  Sep 2021"
+                subtitle="NSW COVID information website"
+                date="03 September 2021"
                 description="COVID infographic app that uses government APIs to visualise NSW COVID info and a map that color codes suburbs based on infected cases."
                 image1="/covidTop.png"
                 image2="/covidMap.png"
@@ -64,7 +65,8 @@ export default function Home() {
               />
               <Project
                 title="Sweet & Sweat"
-                subtitle="Activity-based dating web app  |  August 2021"
+                date="14 August 2021"
+                subtitle="Activity-based dating web app"
                 description="This project was inspired by the current lockdown circumstances where people are isolated inside and might not have enough motivation to get out there and exercise! We created an activity-based dating app to light that fire in their hearts."
                 image1="/sweet-sweat.png"
                 tech="React - Firebase - GA"
@@ -74,7 +76,8 @@ export default function Home() {
               />
               <Project
                 title="AdoptMeow"
-                subtitle="A platform to find cats for adoption  |  July 2021"
+                date="24 July 2021"
+                subtitle="A platform to find cats for adoption"
                 description="An MVC designed project that allow users to have profiles and browse or list cats for adoption."
                 image1="/adoptMeow.png"
                 tech="Ruby on Rails - PostgreSQL - S3(AWS) - Heroku"

@@ -92,6 +92,7 @@
 .footerParagraph {
   margin: 5px;
   color: gray;
+  font-size: small;
 }
 
 .footerButtonContainer {
