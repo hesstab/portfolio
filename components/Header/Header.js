@@ -14,7 +14,7 @@ const Header = () => {
             entries.forEach(e => {
                 setIsObserved(!e.isIntersecting);
             });
-        }, { threshold: 0.2 });
+        }, { threshold: 0.8 });
         observer.observe(document.getElementById('bodyContainer'));
     }, []);
 
