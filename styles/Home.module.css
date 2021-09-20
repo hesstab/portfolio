@@ -11,7 +11,6 @@
   position: relative;
   bottom: 0;
   height: 100vh;
-  /* background: radial-gradient(#5f95fb, #04262b00); */
   background-image: url('/night-sky.png');
 }
 
@@ -35,7 +34,6 @@
 }
 
 .intro h1 {
-  /* text-transform: uppercase; */
   font-weight: bold;
 }
 
@@ -45,26 +43,20 @@
   font-size: larger;
 }
 
-@media only screen and (max-width: 600px) {
-  .curve {
-    object-fit: cover;
-    max-width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 794px;
-  }
-}
-
 .aboutme {
   background-color: #000000;
   padding-top: 80px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects {
   background-color: #000000;
   padding-top: 60px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectsTitle {
@@ -115,4 +107,20 @@
   border: solid 2px;
   color: #f7f7f7;
   cursor: pointer;
+}
+
+/* ------------------------------ Media Responsive ------------------------------------- */
+
+@media only screen and (max-width: 900px) {
+  .mainTop {
+    overflow: hidden;
+  }
+
+  .curve {
+    object-fit: cover;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 794px;
+  }
 }

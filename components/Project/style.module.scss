@@ -30,7 +30,7 @@
 .subtitleContainer {
     background-color: #091128;
     border-radius: 10px;
-    width: 550px;
+    // width: 550px;
     margin-bottom: 15px;
 }
 
@@ -47,8 +47,6 @@
 }
 
 .imageContainer {
-    // margin-right: 100px;
-    // width: 200px;
     position: relative;
     height: 360px;
     margin: 0;
@@ -138,4 +136,31 @@
     font-size: smaller;
     margin-top: 5px;
     color: gray;
+}
+
+/* ------------------------------ Media Responsive ------------------------------------- */
+
+@media only screen and (max-width: 900px) {
+    .projectContainer {
+        flex-direction: column-reverse;
+        margin: 20px 10px;
+        align-items: center;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+    .imageContainer {
+        padding: 10px;
+        width: 352px;
+    }
+
+    .image1 {
+        transform: translate(35px, -11px) rotate(345deg) scale(0.9);
+    }
+    .image2 {
+        transform: translate(135px, -13px) rotate(9deg) scale(0.9);
+    }
+
 }

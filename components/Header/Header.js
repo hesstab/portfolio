@@ -10,12 +10,12 @@ const Header = () => {
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
+            
             entries.forEach(e => {
-                setIsObserved(e.isIntersecting);
+                setIsObserved(!e.isIntersecting);
             });
         }, { threshold: 0.2 });
-
-        observer.observe(document.getElementById('bodyElements'));
+        observer.observe(document.getElementById('bodyContainer'));
     }, []);
 
     const openPdf = () => {

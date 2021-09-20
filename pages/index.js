@@ -14,12 +14,12 @@ const TwitterURL = "https://twitter.com/hessam_taba";
 
 export default function Home() {
   return (
-    <div id="main-top">
+    <div id="main-top" className={styles.mainTop}>
       <Header />
       <main className={styles.main}>
         <div className={styles.inner}>
 
-          <div className={styles.background}>
+          <div id="bodyContainer" className={styles.background}>
             <div className={styles.intro}>
               <h1>
                 Hessam Tabatabaee
@@ -37,7 +37,7 @@ export default function Home() {
             <img className={styles.curve} src="/DarkTop.png" alt="curve1" />
           </div>
 
-          <div id="bodyElements">
+          <div>
             <div id="aboutMe" className={styles.aboutme}>
               <h1 className={styles.aboutmeTitle}>
                 About Me
