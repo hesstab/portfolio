@@ -123,4 +123,21 @@
     bottom: 0;
     height: 794px;
   }
+
+  .footer {
+  margin: 0 auto;
+  padding: 80px 60px;
+  background-color: #091129;
+  color: rgb(255 255 255 / 70%);
+  text-align: center;
+  }
+
+  .footerButton {
+    margin: 0;
+  }
+
+  .footerButton:hover {
+  border: none;
+  color: #f7f7f7;
+  }
 }
