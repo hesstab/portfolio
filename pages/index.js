@@ -4,6 +4,7 @@ import AboutMe from '../components/AboutMe/AboutMe';
 import styles from '../styles/Home.module.css'
 import Button from '../components/Button/Button';
 import Project from '../components/Project/Project';
+import Skill from '../components/Skill/Skill';
 
 import { RiGithubLine, RiLinkedinBoxFill, RiTwitterFill } from "react-icons/ri";
 
@@ -18,19 +19,15 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <div className={styles.inner}>
-
           <div id="bodyContainer" className={styles.background}>
             <div className={styles.intro}>
-              <h1>
-                Hessam Tabatabaee
-              </h1>
+              <h1>Hessam Tabatabaee</h1>
               <p className={styles.introText}>
-                A software engineer based in Sydney, with a passion for adventure and innovation..
+                A software engineer based in Sydney, with a passion for
+                adventure and innovation..
               </p>
               <div className={styles.buttonContainer}>
-                <Button>
-                  GET IN TOUCH
-                </Button>
+                <Button>GET IN TOUCH</Button>
               </div>
             </div>
             <img className={styles.curve} src="/bottom.png" alt="curve1" />
@@ -41,15 +38,15 @@ export default function Home() {
             <div id="aboutMe" className={styles.aboutme}>
               <h1 className={styles.aboutmeTitle}>
                 About Me
-                <hr/>
+                <hr />
               </h1>
               <AboutMe />
             </div>
-            
+
             <div id="projects" className={styles.projects}>
               <h1 className={styles.projectsTitle}>
                 Projects
-                <hr/>
+                <hr />
               </h1>
               <Project
                 title="CovInfo"
@@ -86,35 +83,58 @@ export default function Home() {
                 urlGit="https://github.com/hesstab/AdoptMoew"
               />
             </div>
-          </div>
 
+            <div id="skills" className={styles.skills}>
+              <h1 className={styles.skillsTitle}>
+                Skills
+                <hr />
+              </h1>
+              <div className={styles.skillsWrapper}>
+                <Skill icon="/SkillsIcons/python.png" iconText="Python" />
+                <Skill icon="/SkillsIcons/django.png" iconText="Django" />
+                <Skill icon="/SkillsIcons/vue.png" iconText="Vue.js" />
+                <Skill icon="/SkillsIcons/CSS3.png" iconText="CSS" />
+                <Skill icon="/SkillsIcons/nodeJS.png" iconText="Node.js" />
+                <Skill icon="/SkillsIcons/react.png" iconText="React" />
+                <Skill icon="/SkillsIcons/ruby.png" iconText="Ruby" />
+                <Skill icon="/SkillsIcons/postgresql.png" iconText="PostgreSQL" />
+                <Skill icon="/SkillsIcons/firebase.png" iconText="Firebase" />
+              </div>
+            </div>
+
+            {/* <div className={styles.allIcons}>
+
+            </div> */}
+          </div>
         </div>
       </main>
       <footer id="footer" className={styles.footer}>
         <div className={styles.footerButtonContainer}>
-          <button 
-          className={styles.footerButton}
+          <button
+            className={styles.footerButton}
             onClick={() => window.open(GithubURL, "_blank")}
           >
             <RiGithubLine size={40} />
           </button>
-          <button 
-          className={styles.footerButton}
+          <button
+            className={styles.footerButton}
             onClick={() => window.open(LinkedinURL, "_blank")}
           >
             <RiLinkedinBoxFill size={40} />
           </button>
-          <button 
-          className={styles.footerButton}
+          <button
+            className={styles.footerButton}
             onClick={() => window.open(TwitterURL, "_blank")}
           >
             <RiTwitterFill size={40} />
           </button>
         </div>
-        <p className={styles.footerParagraph}>Site made with React, Next.js and Vercel</p>
+        <p className={styles.footerParagraph}>
+          Site made with React, Next.js and Vercel
+        </p>
         <p className={styles.footerParagraph}>hessam.tabatabaee@gmail.com</p>
         <p className={styles.footerParagraph}>© 2021 Hessam Tabatabaee</p>
       </footer>
     </div>
-  )
+  );
 }

@@ -19,7 +19,7 @@ const Header = () => {
     }, []);
 
     const openPdf = () => {
-        window.open('/Resume_Oct21.pdf', "_blank");
+        window.open("/Resume_HT_Sep22.pdf", "_blank");
     }
 
     return (
@@ -50,6 +50,12 @@ const Header = () => {
                         <NavItem
                             onClick={ () => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }) }
                             name="Projects"
+                        />
+                    </li>
+                    <li>
+                        <NavItem 
+                            onClick={ () => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' }) }
+                            name="Skills"
                         />
                     </li>
                     <li>

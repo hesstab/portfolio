@@ -59,6 +59,20 @@
   flex-direction: column;
 }
 
+.skills {
+  background-color: #000000;
+  padding-top: 60px;
+  padding-bottom: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .projectsTitle {
   color: gray;
   text-align: center;
@@ -73,9 +87,16 @@
   margin: 60px auto;
 }
 
+.skillsTitle {
+  color: gray;
+  text-align: center;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
 .footer {
   margin: 0 auto;
-  padding: 100px;
+  padding: 180px;
   background-color: #091129;
   color: rgb(255 255 255 / 70%);
   text-align: center;
@@ -107,6 +128,19 @@
   border: solid 2px;
   color: #f7f7f7;
   cursor: pointer;
+}
+
+/* ------------------------------ Skills scroll animation ------------------------------------- */
+
+@keyframes ani{
+	0%{background-position: 0 0;}
+	100%{background-position: 100vw 0;}
+}
+
+.allIcons{
+	background:url(/SkillsIcons/all-icons.png) repeat-x 0 / 100% auto;
+	height:100px; /* this value is not important, just not zero */
+	animation: ani 30s linear infinite ;
 }
 
 /* ------------------------------ Media Responsive ------------------------------------- */
